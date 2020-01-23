@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Stress Test</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h2>Stress Test</h2>
+    </div>
+    <form id="stress-test-survey">
+      <div class="form-group" id="warning-boxes">
+        <p>Below are warning signs of stress. Select all that apply:</p>
+        <input type="checkbox" name="warning" value="sleep"> Lack of sleep.<br>
+        <input type="checkbox" name="warning" value="irritability"> Irritability<br>
+        <input type="checkbox" name="warning" value="overwhelmed"> Feeling overwhelmed.<br>
+
+      </div>
+      <div class="form-group" id="symptoms-boxes">
+        <p>Below are health symptoms related to stress. Select all that apply:</p>
+        <input type="checkbox" name="symptoms" value="headaches"> Headaches<br>
+        <input type="checkbox" name="symptoms" value="depression"> Depression<br>
+        <input type="checkbox" name="symptoms" value="roadrage"> Roadrage<br>
+
+      </div>
+      <div class="form-group" id="coping-boxes">
+        <p>Below are methods to cope with stress Select all that apply:</p>
+        <input type="checkbox" name="coping" value="excercise"> Excercise<br>
+        <input type="checkbox" name="coping" value="hobby"> Find a new hobby<br>
+        <input type="checkbox" name="coping" value="meditation"> Meditation<br>
+
+      </div>
+
+
+
+      <button type="submit">Submit Survey</button>
+    </form>
+    <span id="results-you-are-healthy">
+      <p><b>You are healthy!</b></p>
+    </span>
+    <br>
+    <span id="results-stressed">
+      <p><b>You are too stressed. You might want to consider the following stress coping mechanisms:</b></p>
+    </span><div id="results-stressed-suggestions"></div>
+    <br>
+    <span id="results-risk">
+      <p><b>You are at risk of being too stressed:</b></p>
+    </span>
+
+
+
+
+  </div>
+</body>
+
+</html>
